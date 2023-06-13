@@ -1,27 +1,39 @@
-const nombre = "Constanza"
-const apellido = "Jerez Gutierrez"
-const nombreCompleto = nombre + apellido;
-const nickname = "Conyjg"
 
-function completeName (nombre, apellido){
+/*platzi*/
+/*function completeName (nombre, apellido){
     return nombre + ' ' + apellido
 }
 
-function saludo (nombre, apellido, nickname){
+function saludo (nombre, apellido){
 const nombreCompleto = completeName(nombre, apellido);
+const nickname = nombre + apellido;
 
-/*nombreCompleto = nombre + apellido[0] + nickname[0];*/
-
-
-console.log("Mi nombre es " + nombreCompleto + ", pero prefiero que me digas " + nickname + ".");
+console.log("Mi nombre es " + nombreCompleto + ", y mi nickName es " + nickname + ".");
 }
 
 
-saludo('Marcelo', 'Sepulveda Orellana', 'MarceloSO');
+saludo('Constanza', 'Jerez Gutierrez');*/
 
 
 
-function palabras(str) {
+function saludos (nombre, apellido1, apellido2){
+  const nombreCompleto = nombre + ' ' + apellido1 + ' ' + apellido2;
+  const nickname = nombre + apellido1.substring(0,1) + apellido2.substring(0,1)  ;  
+  
+  
+  
+  console.log("Mi nombre es " + nombreCompleto +", y mi nickName es " + nickname + ".");
+  }
+  
+  
+  saludos('Constanza', 'Jerez', 'Gutierrez');
+
+  
+
+
+
+  /*chatgpt*/
+/*function palabras(str) {
     // Divide la cadena en palabras individuales
     let letras = str.split(" ");
   
@@ -39,6 +51,4 @@ function palabras(str) {
   let texto = "hola mundo feliz";
   let resultado = palabras(texto);
   console.log(resultado); 
-  // Salida: "Hola Mundo"
-  
- 
+  // Salida: "Hola Mundo"*/
