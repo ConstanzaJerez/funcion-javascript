@@ -26,7 +26,7 @@ const nombreCompleto = nombre  + ' ' + apellido1 + ' ' + apellido2;
 
 const nickname = nombre + apellido1.substring(0,1) + apellido2.substring(0,1);  
 
-document.write("Mi nombre es " + nombreCompleto +", y mi nickname es " + nickname + "."/*, '</br>'*/);
+document.write("Mi nombre es " + nombreCompleto +", y mi nickname es " + nickname + ".");
 
 }
 
