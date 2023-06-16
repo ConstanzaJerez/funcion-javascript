@@ -1,7 +1,7 @@
 
 /*platzi*/
 /*function completeName (nombre, apellido){
-    return nombre + ' ' + apellido
+return nombre + ' ' + apellido
 }
 
 function saludo (nombre, apellido){
@@ -21,54 +21,45 @@ function saludos (nombre, apellido1, apellido2){
 
   const nombreCompleto = nombre  + ' ' + apellido1 + ' ' + apellido2;
   const nickname = nombre + apellido1.substring(0,1) + apellido2.substring(0,1);  
+  
+  document.write("Mi nombre es " + nombreCompleto +", y mi nickname es " + nickname + ".");
 
-  /*nombre = prompt("Escribe tu nombre", "") + prompt("Escribe tu primer apellido", "") + prompt("Escribe tu segundo apellido", "");*/
-  
-  console.log("Mi nombre es " + nombreCompleto +", y mi nickName es " + nickname + ".");
   }
-  
   
   saludos('Constanza', 'Jerez', 'Gutierrez');
 
 
- /* function getName(){
-    return prompt("Escriba su Nombre", "");
-  }
 
-  function getLastName(a, b){
-    return prompt ("Escriba su primer y segundo apellido", "");
-  }
 
-  function getData(){
-    let nombre = getName();
-    let  apellido = getLastName (a, b);
-    let nickname = nombre + apellido;
+/*El método substring() en JavaScript se utiliza para extraer una parte de una cadena de texto. Toma como argumentos los índices de inicio y fin y devuelve una nueva cadena que contiene los caracteres extraídos.
 
-    console.log("Mi nombre es " + nombre + ' ' + apellido + " y tu nickname es " + nickname + ' ');
+cadena.substring(inicio, fin);
 
-  }
+Donde:
 
-  getData();*/
+  cadena es la cadena de texto original de la cual quieres extraer una parte.
+  inicio es el índice en el que comienza la extracción. Es un valor numérico y se basa en cero, lo que significa que el primer carácter tiene un índice de 0.
+  fin es el índice en el que termina la extracción (no se incluye en el resultado final). Es opcional y si no se proporciona, se extraen todos los caracteres desde el índice de inicio hasta el final de la cadena.*/
 
 
 
-  /*chatgpt*/
+/*chatgpt*/
 /*function palabras(str) {
-    // Divide la cadena en palabras individuales
-    let letras = str.split(" ");
-  
-    // Itera sobre cada palabra y capitaliza la primera letra
-    for (let i = 0; i < letras.length; i++) {
-      let combiLetra = letras[i];
-      letras[i] = combiLetra.charAt(0).toUpperCase()+ combiLetra.slice(1) + combiLetra.charAt(combiLetra.length - 1) 
-    }
-    // Une las palabras capitalizadas en una cadena y devuelve el resultado
-    return letras.join(" ");
+// Divide la cadena en palabras individuales
+let letras = str.split(" ");
 
-  }
+// Itera sobre cada palabra y capitaliza la primera letra
+for (let i = 0; i < letras.length; i++) {
+let combiLetra = letras[i];
+letras[i] = combiLetra.charAt(0).toUpperCase()+ combiLetra.slice(1) + combiLetra.charAt(combiLetra.length - 1) 
+}
+// Une las palabras capitalizadas en una cadena y devuelve el resultado
+return letras.join(" ");
 
-  // Ejemplo
-  let texto = "hola mundo feliz";
-  let resultado = palabras(texto);
-  console.log(resultado); 
-  // Salida: "Hola Mundo"*/
+}
+
+// Ejemplo
+let texto = "hola mundo feliz";
+let resultado = palabras(texto);
+console.log(resultado); 
+// Salida: "Hola Mundo"*/
