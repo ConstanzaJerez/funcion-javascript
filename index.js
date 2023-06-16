@@ -17,16 +17,21 @@ saludo('Constanza', 'Jerez Gutierrez');*/
 
 
 function saludos (nombre, apellido1, apellido2){
-  
 
-  const nombreCompleto = nombre  + ' ' + apellido1 + ' ' + apellido2;
-  const nickname = nombre + apellido1.substring(0,1) + apellido2.substring(0,1);  
-  
-  document.write("Mi nombre es " + nombreCompleto +", y mi nickname es " + nickname + ".");
+nombre = prompt("¿Cuál es tu nombre?");
+apellido1 = prompt("¿Cuál es tu primer apellido?");
+apellido2 = prompt("¿Cuál es tu segundo apellido?");
 
-  }
-  
-  saludos('Constanza', 'Jerez', 'Gutierrez');
+const nombreCompleto = nombre  + ' ' + apellido1 + ' ' + apellido2;
+
+const nickname = nombre + apellido1.substring(0,1) + apellido2.substring(0,1);  
+
+document.write("Mi nombre es " + nombreCompleto +", y mi nickname es " + nickname + "."/*, '</br>'*/);
+
+}
+
+saludos();
+
 
 
 
