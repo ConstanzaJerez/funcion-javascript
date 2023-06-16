@@ -16,6 +16,8 @@ saludo('Constanza', 'Jerez Gutierrez');*/
 
 
 
+
+
 function saludos (nombre, apellido1, apellido2){
 
 nombre = prompt("¿Cuál es tu nombre?");
@@ -31,9 +33,6 @@ document.write("Mi nombre es " + nombreCompleto +", y mi nickname es " + nicknam
 }
 
 saludos();
-
-
-
 
 
 /*El método substring() en JavaScript se utiliza para extraer una parte de una cadena de texto. Toma como argumentos los índices de inicio y fin y devuelve una nueva cadena que contiene los caracteres extraídos.
