@@ -18,7 +18,7 @@ saludo('Constanza', 'Jerez Gutierrez');*/
 
 
 
-function saludos (nombre, apellido1, apellido2){
+function fCrearNickname (nombre, apellido1, apellido2){
 
 nombre = prompt("¿Cuál es tu nombre?");
 apellido1 = prompt("¿Cuál es tu primer apellido?");
@@ -26,13 +26,33 @@ apellido2 = prompt("¿Cuál es tu segundo apellido?");
 
 const nombreCompleto = nombre  + ' ' + apellido1 + ' ' + apellido2;
 
-const nickname = nombre + apellido1.substring(0,1) + apellido2.substring(0,1);  
 
-document.write("Mi nombre es " + nombreCompleto +", y mi nickname es " + nickname + ".");
+let inicioNickname;
+let primeraLetra;
+let segundaLetra;
+
+let palabras = nombre.split(' ');
+
+if(palabras.length === 2){
+  inicioNickname = palabras[0];
+  primeraLetra = palabras[1].substring(0,1);
+  segundaLetra = palabras[1].substring(1,2);
+
+}else if(palabras.length === 1){
+inicioNickname = nombre;
+}
+
+
+
+const nickname = inicioNickname + primeraLetra + segundaLetra + apellido1.substring(0,1) + apellido2.substring(0,1);
+
+/*const nickname = nombre + apellido1.substring(0,1) + apellido2.substring(0,1);*/
+
+document.write("Mi nombre es " + nombreCompleto +", y mi nickname es " + nickname.toLowerCase() + ".");
 
 }
 
-saludos();
+fCrearNickname();
 
 
 /*El método substring() en JavaScript se utiliza para extraer una parte de una cadena de texto. Toma como argumentos los índices de inicio y fin y devuelve una nueva cadena que contiene los caracteres extraídos.
